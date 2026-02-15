@@ -34,9 +34,9 @@ NetShield is a comprehensive cybersecurity command center designed to protect us
 ## 🔗 Links
 
 - [GitHub Repository](https://github.com/athrvas017/Code_Guardians)
-- [Demo Video]([https://drive.google.com/drive/folders/1dVyEsKwROaDJ4tRXqUwdbtWY4HUjXxSL?usp=sharing])
+- [Demo Video](https://drive.google.com/drive/folders/1dVyEsKwROaDJ4tRXqUwdbtWY4HUjXxSL?usp=sharing)
 - [Project Screenshots/Drive](https://drive.google.com/drive/folders/1HvrXofSExR4bGeJy7EzlTZEwDSUbz-35)
-- [Hosted Website]([https://netshield-67le.onrender.com/])
+- [Hosted Website](https://netshield-67le.onrender.com/)
 
 ## 🤖 Tech-Stack
 
