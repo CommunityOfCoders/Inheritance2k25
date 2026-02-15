@@ -1,63 +1,78 @@
-CoC Inheritance 2025
-Campus Connected: Connecting students, resources, and mentorship
-By Nerds Unite
+# CoC Inheritance 2025
 
-📝 Description
-Campus Connected is a web platform designed to help students collaborate, share academic resources, and connect with seniors for mentorship and guidance. The platform solves the problem of fragmented academic communication by providing a centralized system for resource sharing and mentorship interaction. It is built using the MERN stack with TypeScript, JWT authentication, and MongoDB Atlas.
+## Campus Connected
+**Connecting students, resources, and mentorship**
 
-🔗 Links
-GitHub Repository (https://github.com/munishmehra374-ctrl/campus_connected.git)
-Hosted Website (Not hosted yet)
+### Team: Nerds Unite
+Munish Mehra  
+Neev Jain  
+Aadit Deepak Amin  
+Siyam Sarfaraz  
 
-🤖 Tech-Stack
-Frontend: React (Vite), TypeScript, Axios
-Backend: Node.js, Express.js, JWT Authentication, Multer
-Database: MongoDB Atlas, Mongoose
+### Mentors
+Ayaansh  
+Shivraj  
+Zoher Vohra  
 
-📈 Progress
-Fully Implemented Features
+---
+
+## 📝 Description
+Campus Connected is a web platform designed to help students collaborate, share academic resources, and connect with seniors for mentorship and guidance. The platform solves the problem of fragmented academic communication by providing a centralized system for resource sharing and mentorship interaction.
+
+The project is built using the **MERN stack with TypeScript**, JWT authentication, and MongoDB Atlas.
+
+---
+
+## 🔗 Links
+- GitHub Repository: https://github.com/munishmehra374-ctrl/campus_connected.git
+- Hosted Website: Not hosted yet
+
+---
+
+## 🤖 Tech Stack
+
+| Layer | Technology |
+|------|------------|
+| Frontend | React (Vite), TypeScript, Axios |
+| Backend | Node.js, Express.js, JWT, Multer |
+| Database | MongoDB Atlas, Mongoose |
+
+---
+
+## 📈 Progress
+
+### Fully Implemented Features
 - JWT-based authentication system
 - Senior–junior mentorship platform
 - Resource upload system using Multer
 - Role-based access control
 - MongoDB Atlas integration
 
-Partially Implemented Features / Work in Progress
+### Work in Progress
 - Deployment configuration
 - Notification system
 
-🔮 Future Scope
+---
+
+## 🔮 Future Scope
 - Notification system integration
 - Mobile responsive interface
 - Authentication improvements
 
-💸 Applications
+---
+
+## 💸 Applications
 - Academic collaboration platform
 - Mentorship platform
 
-🛠 Project Setup
-Clone the GitHub repo:
+---
+
+## 🛠 Project Setup
+
+### Clone repository
+```bash
 git clone https://github.com/munishmehra374-ctrl/campus_connected.git
-
-👨‍💻 Team Members
-
-Munish Mehra
-
-Neev Jain
-
-Aadit Deepak Amin
-
-Siyam Sarfaraz
-
-
-
-👨‍🏫 Mentors
-
-Ayaansh
-
-Shivraj
-
-Zoher Vohra
+cd campus_connected
 
 ## 🛠 Project Setup
 
