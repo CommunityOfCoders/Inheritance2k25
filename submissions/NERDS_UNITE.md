@@ -40,14 +40,23 @@ Clone the GitHub repo:
 git clone https://github.com/munishmehra374-ctrl/campus_connected.git
 
 👨‍💻 Team Members
+
 Munish Mehra
+
 Neev Jain
+
 Aadit Deepak Amin
+
 Siyam Sarfaraz
 
+
+
 👨‍🏫 Mentors
+
 Ayaansh
+
 Shivraj
+
 Zoher Vohra
 
 ## 🛠 Project Setup
