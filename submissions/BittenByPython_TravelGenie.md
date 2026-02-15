@@ -33,9 +33,9 @@ TravelGenie is an AI-powered smart travel planning system that generates persona
 ## 🔗 Links
 
 - [GitHub Repository](https://github.com/Rehan1604/Travel_Genie-Inheritance-)
-- [Demo Video]https://drive.google.com/file/d/17rnifMKwYDJi85VA_xYY3rXyMjG5T3Hy/view?usp=drive_link
-- [Project Screenshots/Drive] https://drive.google.com/drive/folders/1NHrsDFPxkjYD7yWH67OHcHFVX3k0ld5h?usp=drive_link
-- [Hosted Website](Not Deployed Yet)
+- [Demo Video](https://drive.google.com/file/d/17rnifMKwYDJi85VA_xYY3rXyMjG5T3Hy/view?usp=drive_link)
+- [Project Screenshots/Drive](https://drive.google.com/drive/folders/1NHrsDFPxkjYD7yWH67OHcHFVX3k0ld5h?usp=drive_link)
+- Hosted Website: Not Deployed Yet
 
 ## 🤖 Tech-Stack
 
@@ -43,16 +43,25 @@ TravelGenie is an AI-powered smart travel planning system that generates persona
 
 ```mermaid
 graph LR
-    A[User Input] --> B[React Frontend Vite]
-    B --> C[Axios API Request]
-    C --> D[FastAPI Backend]
-    D --> E[CSV Dataset Filtering]
-    E --> F[Structured Prompt Injection]
-    F --> G[Mistral 7B Instruct 4bit Quantized]
-    G --> H[RTX 4060 GPU CUDA 12.7]
-    H --> I[Day-wise Structured Itinerary Output]
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
     I --> B
 
+    A[User_Input]
+    B[React_Frontend]
+    C[Axios_API]
+    D[FastAPI_Backend]
+    E[CSV_Filtering]
+    F[Prompt_Injection]
+    G[Mistral_7B]
+    H[GPU_Inference]
+    I[Itinerary_Output]
 Front-end
 React.js (Vite)
 
@@ -74,7 +83,7 @@ Mistral 7B Instruct
 Database / ML
 Structured CSV dataset (Cities from India, USA, Iran)
 
-Includes climate data, pricing ranges, and category metadata
+Climate data, pricing ranges, and category metadata
 
 4-bit quantization for optimized inference
 
@@ -82,16 +91,16 @@ NVIDIA RTX 4060 GPU with CUDA 12.7
 
 📈 Progress
 Fully Implemented Features
-Personalized Day-wise Itinerary Generation: Automatically generates structured travel plans divided by day.
+Personalized Day-wise Itinerary Generation – Automatically generates structured travel plans divided by day.
 
-Budget-Aware Dataset Filtering: Filters attractions based on user-defined budget constraints.
+Budget-Aware Dataset Filtering – Filters attractions based on user-defined budget constraints.
 
-City-Restricted Recommendation System: Ensures no cross-city or irrelevant outputs are generated.
+City-Restricted Recommendation System – Ensures no cross-city or irrelevant outputs are generated.
 
 Partially Implemented Features / Work in Progress
-Cloud Deployment: Currently running locally; deployment to cloud environment planned.
+Cloud Deployment – Currently running locally; deployment to cloud environment planned.
 
-External API Integrations: Weather, hotel, and flight APIs to enhance itinerary realism.
+External API Integrations – Weather, hotel, and flight APIs to enhance itinerary realism.
 
 🔮 Future Scope
 Integration of real-time weather APIs.
@@ -105,16 +114,14 @@ Cloud-based LLM deployment.
 Advanced retrieval mechanisms for scalable systems.
 
 💸 Applications
-Personalized Travel Planning - Generates realistic, budget-aware, and structured travel itineraries.
+Personalized Travel Planning – Generates realistic, budget-aware, and structured travel itineraries.
 
-AI Travel Assistant Systems - Demonstrates practical local LLM deployment for smart recommendation engines.
+AI Travel Assistant Systems – Demonstrates practical local LLM deployment for smart recommendation engines.
 
 🛠 Project Setup
-Clone the GitHub repo.
+Clone the GitHub repository:
 
 git clone https://github.com/Rehan1604/Travel_Genie-Inheritance-.git
-Enter the project directory and install dependencies.
-
 Backend Setup:
 
 cd Travel_Genie-Inheritance-/backend
@@ -125,21 +132,19 @@ Frontend Setup:
 cd ../frontend
 npm install
 npm run dev
-Start the application.
-
-Frontend runs on local development server after npm run dev.
-Backend runs via uvicorn main:app --reload.
+Frontend runs using npm run dev.
+Backend runs using uvicorn main:app --reload.
 
 👨‍💻 Team Members
-Rehan Mehta: https://github.com/Rehan1604
+Rehan Mehta – https://github.com/Rehan1604
 
-Devansh Mehta: https://github.com/Devansh270
+Devansh Mehta – https://github.com/Devansh270
 
-Bhavya Gothi: https://github.com/Bhavya4523
+Bhavya Gothi – https://github.com/Bhavya4523
 
-Jehan Bheda: https://github.com/jehanbheda
+Jehan Bheda – https://github.com/jehanbheda
 
 👨‍🏫 Mentors
-Harsh Ogale: https://github.com/harshogale04
+Harsh Ogale – https://github.com/harshogale04
 
-Piyush Patil: https://github.com/MAVERICK-111
+Piyush Patil – https://github.com/MAVERICK-111
