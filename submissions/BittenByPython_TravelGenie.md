@@ -43,15 +43,16 @@ TravelGenie is an AI-powered smart travel planning system that generates persona
 
 ```mermaid
 graph LR
-    A[User Input] --> B[React Frontend (Vite)]
+    A[User Input] --> B[React Frontend Vite]
     B --> C[Axios API Request]
     C --> D[FastAPI Backend]
     D --> E[CSV Dataset Filtering]
     E --> F[Structured Prompt Injection]
-    F --> G[Mistral 7B Instruct (4-bit Quantized)]
-    G --> H[RTX 4060 GPU - CUDA 12.7]
+    F --> G[Mistral 7B Instruct 4bit Quantized]
+    G --> H[RTX 4060 GPU CUDA 12.7]
     H --> I[Day-wise Structured Itinerary Output]
     I --> B
+
 Front-end
 React.js (Vite)
 
