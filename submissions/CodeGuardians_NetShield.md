@@ -15,15 +15,15 @@ By Team Code Guardians
 <details>
 <summary>Table of Contents</summary>
 
-- [Description](#description)
-- [Links](#links)
-- [Tech Stack](#tech-stack)
-- [Progress](#progress)
-- [Future Scope](#future-scope)
-- [Applications](#applications)
-- [Project Setup](#project-setup)
-- [Team Members](#team-members)
-- [Mentors](#mentors)
+- [Description](#-description)
+- [Links](#-links)
+- [Tech Stack](#-tech-stack)
+- [Progress](#-progress)
+- [Future Scope](#-future-scope)
+- [Applications](#-applications)
+- [Project Setup](#-project-setup)
+- [Team Members](#-team-members)
+- [Mentors](#-mentors)
 
 </details>
 
