@@ -73,8 +73,9 @@ graph LR
     C --> D[Embedding Pipeline]
     D --> E[ChromaDB Vector Store]
     E --> F[Retriever]
-    F --> G[LLM (Groq API)]
+    F --> G[LLM - Groq API]
     G --> H[Final Response]
+
 ```
 
 ---
