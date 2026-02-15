@@ -55,25 +55,26 @@ It bridges the gap between generic travel suggestions and realistic, budget-awar
 
 ```mermaid
 flowchart TD
-    U[User Preferences<br/>Destination | Days | Budget | Category]
-    FE[React Frontend (Vite)]
-    API[Axios API Communication]
-    BE[FastAPI Backend]
-    FILTER[CSV Dataset Filtering]
-    PROMPT[Structured Prompt Construction]
-    LLM[Mistral 7B Instruct<br/>4-bit Quantized]
-    GPU[RTX 4060 GPU - CUDA 12.7]
-    OUT[Day-wise Structured Itinerary Output]
+U["User Preferences\nDestination | Days | Budget | Category"]
+FE["React Frontend (Vite)"]
+API["Axios API Communication"]
+BE["FastAPI Backend"]
+FILTER["CSV Dataset Filtering"]
+PROMPT["Structured Prompt Construction"]
+LLM["Mistral 7B Instruct\n4-bit Quantized"]
+GPU["RTX 4060 GPU - CUDA 12.7"]
+OUT["Day-wise Structured Itinerary Output"]
 
-    U --> FE
-    FE --> API
-    API --> BE
-    BE --> FILTER
-    FILTER --> PROMPT
-    PROMPT --> LLM
-    LLM --> GPU
-    GPU --> OUT
-    OUT --> FE
+U --> FE
+FE --> API
+API --> BE
+BE --> FILTER
+FILTER --> PROMPT
+PROMPT --> LLM
+
+LLM --- GPU
+LLM --> OUT
+OUT --> FE
 ```
 
 ---
@@ -217,4 +218,4 @@ Backend runs via `uvicorn main:app --reload`.
 ## 👨‍🏫 Mentors
 
 * **Harsh Ogale** – https://github.com/harshogale04  
-* **Piyush Patil** – https://github.com/MAVERICK-111  
+* **Piyush Patil** – https://github.com/MAVERICK-111
