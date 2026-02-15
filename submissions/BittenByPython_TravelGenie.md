@@ -54,135 +54,167 @@ It bridges the gap between generic travel suggestions and realistic, budget-awar
 ### 🏗️ System Architecture
 
 ```mermaid
-graph TD
-    User[User Input] --> Frontend
-    Frontend[React Frontend] --> Backend
-    Backend[FastAPI Backend] --> Dataset
-    Dataset[CSV Dataset Filtering] --> LLM
-    LLM[Mistral 7B Instruct] --> GPU
-    GPU[RTX 4060 GPU CUDA 12.7] --> Output
-    Output[Day-wise Structured Itinerary]
-Front-end
+flowchart TD
+    U[User Preferences<br/>Destination | Days | Budget | Category]
+    FE[React Frontend (Vite)]
+    API[Axios API Communication]
+    BE[FastAPI Backend]
+    FILTER[CSV Dataset Filtering]
+    PROMPT[Structured Prompt Construction]
+    LLM[Mistral 7B Instruct<br/>4-bit Quantized]
+    GPU[RTX 4060 GPU - CUDA 12.7]
+    OUT[Day-wise Structured Itinerary Output]
+
+    U --> FE
+    FE --> API
+    API --> BE
+    BE --> FILTER
+    FILTER --> PROMPT
+    PROMPT --> LLM
+    LLM --> GPU
+    GPU --> OUT
+    OUT --> FE
+```
+
+---
+
+## Front-end
+
 The user interface is built for clarity and interactivity, ensuring seamless itinerary generation.
 
-Framework: React.js (Vite)
-Communication: Axios
-Storage: Browser localStorage
+**Framework:** React.js (Vite)  
+**Communication:** Axios  
+**Storage:** Browser localStorage  
 
-Key Features
-Dynamic chat-based input interface
+### Key Features
 
-Real-time itinerary rendering
+- Dynamic chat-based input interface  
+- Real-time itinerary rendering  
+- Editable travel plans  
+- Persistent storage of generated itineraries  
 
-Editable travel plans
+---
 
-Persistent storage of generated itineraries
+## Back-end
 
-Back-end
 The backend handles dataset filtering, LLM orchestration, and structured output formatting.
 
-Framework: FastAPI
-Model Runtime: HuggingFace Transformers + Accelerate
+**Framework:** FastAPI  
+**Model Runtime:** HuggingFace Transformers + Accelerate  
 
-Core Components
-Dataset filtering engine (CSV-based)
+### Core Components
 
-Prompt construction logic
+- Dataset filtering engine (CSV-based)  
+- Prompt construction logic  
+- LLM inference pipeline  
+- Structured response formatter  
 
-LLM inference pipeline
+---
 
-Structured response formatter
+## Database & Machine Learning
 
-Database & Machine Learning
-Data Layer: Structured CSV dataset (India, USA, Iran cities)
-Includes: Climate data, pricing ranges, category metadata
+**Data Layer:** Structured CSV dataset (India, USA, Iran cities)  
+**Includes:** Climate data, pricing ranges, category metadata  
 
-AI Infrastructure
-Mistral 7B Instruct
+### AI Infrastructure
 
-4-bit quantization
+- Mistral 7B Instruct  
+- 4-bit quantization  
+- NVIDIA RTX 4060 GPU  
+- CUDA 12.7  
 
-NVIDIA RTX 4060 GPU
-
-CUDA 12.7
+---
 
 <a name="progress"></a>
 
-📈 Progress
-Fully Implemented Features
-Personalized Day-wise Itinerary Generation: Automatically generates structured travel plans divided by day.
+## 📈 Progress
 
-Budget-Aware Filtering: Ensures recommendations align with user budget constraints.
+### Fully Implemented Features
 
-City-Restricted Recommendations: Prevents cross-city irrelevant suggestions.
+* Personalized Day-wise Itinerary Generation  
+* Budget-Aware Filtering  
+* City-Restricted Recommendations  
+* Climate Summary Integration  
+* Local GPU Inference  
 
-Climate Summary Integration: Displays contextual weather information.
+---
 
-Local GPU Inference: Efficient 4-bit quantized LLM execution.
+### Partially Implemented Features / Work in Progress
 
-Partially Implemented Features / Work in Progress
-Cloud Deployment: Currently optimized for local GPU execution.
+* Cloud Deployment  
+* External API Integrations  
+* Multi-city Route Optimization  
 
-External API Integrations: Planned integration with weather, hotel, and flight APIs.
-
-Multi-city Route Optimization: Under development.
+---
 
 <a name="future-scope"></a>
 
-🔮 Future Scope
-Integration of real-time travel APIs
+## 🔮 Future Scope
 
-Multi-city itinerary optimization
+- Real-time travel API integration  
+- Multi-city itinerary optimization  
+- User authentication and trip storage  
+- Scalable LLM deployment  
+- Advanced personalization mechanisms  
 
-User authentication and cloud-based trip saving
-
-Deployment of scalable LLM infrastructure
-
-Advanced retrieval and personalization mechanisms
+---
 
 <a name="applications"></a>
 
-💸 Applications
-Personalized Travel Planning - Structured, budget-aware itinerary generation.
+## 💸 Applications
 
-AI Travel Assistant Systems - Demonstrates practical local LLM deployment.
+1. Personalized Travel Planning  
+2. AI Travel Assistant Systems  
+3. Academic AI Demonstration  
 
-Academic AI Demonstration - Showcases prompt engineering and GPU optimization.
+---
 
 <a name="project-setup"></a>
 
-🛠 Project Setup
-Clone the GitHub repository:
+## 🛠 Project Setup
 
+### Clone Repository
+
+```bash
 git clone https://github.com/Rehan1604/Travel_Genie-Inheritance-.git
 cd Travel_Genie-Inheritance-
-Backend setup:
+```
 
+### Backend Setup
+
+```bash
 cd backend
 pip install -r requirements.txt
 uvicorn main:app --reload
-Frontend setup:
+```
 
+### Frontend Setup
+
+```bash
 cd frontend
 npm install
 npm run dev
-Frontend runs via npm run dev.
-Backend runs via uvicorn main:app --reload.
+```
+
+Frontend runs via `npm run dev`.  
+Backend runs via `uvicorn main:app --reload`.
+
+---
 
 <a name="team-members"></a>
 
-👨‍💻 Team Members
-Rehan Mehta: https://github.com/Rehan1604
+## 👨‍💻 Team Members
 
-Devansh Mehta: https://github.com/Devansh270
+* **Rehan Mehta** – https://github.com/Rehan1604  
+* **Devansh Mehta** – https://github.com/Devansh270  
+* **Bhavya Gothi** – https://github.com/Bhavya4523  
+* **Jehan Bheda** – https://github.com/jehanbheda  
 
-Bhavya Gothi: https://github.com/Bhavya4523
-
-Jehan Bheda: https://github.com/jehanbheda
+---
 
 <a name="mentors"></a>
 
-👨‍🏫 Mentors
-Harsh Ogale: https://github.com/harshogale04
+## 👨‍🏫 Mentors
 
-Piyush Patil: https://github.com/MAVERICK-111
+* **Harsh Ogale** – https://github.com/harshogale04  
+* **Piyush Patil** – https://github.com/MAVERICK-111  
